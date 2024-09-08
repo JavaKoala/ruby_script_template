@@ -1,0 +1,17 @@
+#!/usr/bin/env ruby
+
+require 'bundler'
+Bundler.setup(:default)
+Bundler.require(:default)
+require 'optparse'
+require 'psych'
+Dir[File.join(__dir__, '../lib', '**', '*.rb')].each { |file| require file }
+
+options = { option: 'default option' }
+OptionParser.new do |parser|
+  parser.on('-o OPTION', '--option OPTION', 'Template option') do |o|
+    options[:option] = o
+  end
+end.parse!
+
+Script::ExampleScript.new(options).run
