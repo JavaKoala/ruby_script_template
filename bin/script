@@ -5,6 +5,9 @@ Bundler.setup(:default)
 Bundler.require(:default)
 require 'optparse'
 require 'psych'
+
+`touch ./log/template.log`
+
 Dir[File.join(__dir__, '../lib', '**', '*.rb')].each { |file| require file }
 
 options = { option: 'default option' }

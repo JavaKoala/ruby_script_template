@@ -1,6 +1,6 @@
 module Script
   def self.logger
-    @logger ||= Logger.new($stdout)
+    @logger ||= Logger.new('./log/template.log', 10)
   end
 
   def self.config

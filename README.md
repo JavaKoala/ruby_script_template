@@ -12,7 +12,7 @@ Add configuration in config/config.yml
 
 ## Logger
 
-Currently logs to `$stdout`. Review https://ruby-doc.org/3.3.5/stdlibs/logger/Logger.html for logging to a file
+Currently logs to `./log/template.log`.
 
 ## Lint & Test
 
