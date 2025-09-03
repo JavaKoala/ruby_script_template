@@ -2,7 +2,7 @@
 
 source 'https://rubygems.org'
 
-gem 'logger', '~> 1.6'
+gem 'logger', '~> 1.7'
 
 group :development, :test do
   gem 'rspec', '~> 3.13'

@@ -15,6 +15,6 @@ RSpec.describe Script::ExampleScript do
 
     described_class.new(option: 'value').run
 
-    expect(Script.logger).to have_received(:info).with('config: {:sample=>{:configuration=>"example"}}')
+    expect(Script.logger).to have_received(:info).with('config: {sample: {configuration: "example"}}')
   end
 end
